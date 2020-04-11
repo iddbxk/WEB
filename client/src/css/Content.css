@@ -1,0 +1,40 @@
+#content{
+	background: #fff;
+	width: 1000px;
+	margin: 0 auto;
+
+}
+
+.section_main{
+	width: 700px;
+	background: #fff;
+	float: left;
+}
+
+.aside{
+	width: 300px;
+	background: #fff;
+	float: left;
+	height: 600px;
+}
+
+.section{
+	background: #fff;
+	height: 350px;
+}
+
+
+.article{
+	background: #fff;
+	height: 250px;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.clearfix::after{
+	clear: both; /* float 해제 */
+	display: block;
+	content: "";
+}
