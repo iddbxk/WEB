@@ -10,15 +10,23 @@ import Bottom from './Bottom';
 
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <Header />
-    <Nav/>
-    <Content/>
-    <Bottom/>
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <Header></Header>
+        <Nav></Nav>
+        <Content></Content>
+        <Bottom></Bottom>
+      </div>
+    );
+  }
+}
+
+
+ReactDOM.render(<App></App>, document.getElementById('root'));
+
 
 
 
